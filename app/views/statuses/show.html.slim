@@ -1,0 +1,16 @@
+p#notice= notice
+
+p
+  strong
+    ' Name:
+  = @status.name
+
+p
+  strong
+    ' Content:
+  = @status.content
+
+p
+  = link_to 'Edit', edit_status_path(@status)
+  '
+  = link_to 'Back', statuses_path

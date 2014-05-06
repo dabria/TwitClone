@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title TwitClone
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    link(href="/app/assets/stylesheets/application.css" rel="stylesheet")
+  body
+    == yield
